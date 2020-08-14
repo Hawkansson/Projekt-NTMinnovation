@@ -1,0 +1,38 @@
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 20px;
+    max-height:400px;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+.mulish-reg {
+  font-family: mulish-reg;
+  //color: darkgrey; }
+.mulish-bold { font-family: mulish-bold; }
+.mulish-exbold { font-family: mulish-exbold; }
+
+li a {
+    background: #999;
+    color: #AF8644;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li a:hover {
+    background: #555;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.fotcol {
+  color: #004764;
+}
+
+.exArticle {
+  font-size: 10px;
+}

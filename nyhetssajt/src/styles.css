@@ -1,0 +1,55 @@
+body {
+  background-color: /#002E64;
+}
+img {
+  max-width: 100%;
+  box-shadow: 0 0 3px #B0BEC5;
+}
+
+article {
+  background: #ECEFF1;
+  border-radius: 4px;
+  overflow: hidden;
+  font: 12px/1.1 system-ui, sans-serif;
+  a {
+    text-decoration: none;
+    color: #455A64;
+    &:hover, &:focus {
+      color: #2196F3;
+    }
+  }
+  h2 {
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+}
+
+.app-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .main-content {
+    .main-toolbar {
+      flex: 0 0 auto;
+      z-index: 999;
+    }
+  }
+
+}
+@font-face {
+  font-family: mulish-reg;
+  src: url(assets/fonts/Mulish-Regular.ttf) format("truetype");
+}
+@font-face  {
+  font-family: mulish-bold;
+  src: url(assets/fonts/Mulish-Bold.ttf) format("truetype");
+}
+@font-face  {
+  font-family: mulish-exbold;
+  src: url(assets/fonts/Mulish-ExtraBold.ttf) format("truetype");
+}

@@ -1,0 +1,113 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<section>
+  <mat-toolbar class="mulish-exbold">
+    Nyheter
+  </mat-toolbar>
+
+    <!-- <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span class="mulish-reg">RSS-flöde</span>
+        <span class="example-space"></span>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+        <button mat-icon-button class="example-icon, mulish-bold" (click)="UpdateFeeds()">
+            Update RSS feeds
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+</section>
+
+
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div id="title" class="exArticle"></div>
+      </mat-panel-title>
+      <mat-panel-description>
+        <div id="text"></div>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <div id="image"></div>
+  </mat-expansion-panel>
+
+-->
+
+<div *ngIf="authentication">
+
+  <app-head></app-head>
+
+  <button type="button" mat-button (click)="drawer.toggle()">
+
+    Menu
+
+  </button>
+
+  <mat-drawer-container class="example-container" autosize>
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+      <app-left-panel></app-left-panel>
+
+    </mat-drawer>
+
+    <div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </mat-drawer-container>
+
+</div>
+
+<div *ngIf="!authentication"><app-login></app-login></div>
+<footer class="page-footer font-small blue pt-4, fotcol">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left, mulish">
+
+      <!-- Grid row -->
+      <div class="row, mulish">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="mulish">Hemsida skapad av Filip Håkansson</h5>
+          <p>Email: filiphksson@outlook.com</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
